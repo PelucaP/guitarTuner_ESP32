@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="1000" viewBox="0 0 1660 1000">
+<rect width="1660" height="1000" fill="#FFFFFF"/>
+<text x="40" y="50" font-family="DejaVu Sans" font-size="26" font-weight="bold" text-anchor="start" fill="#0D2E4A">Arquitectura de software por núcleos (FreeRTOS)</text>
+<text x="40" y="78" font-family="DejaVu Sans" font-size="14" font-weight="normal" text-anchor="start" fill="#546E7A">Core 1: adquisición y DSP (bloques, sin tiempo crítico).   Core 0: control determinista y máquina de estados.</text>
+<rect x="60" y="110" width="660" height="700" rx="16" fill="#E8F5E9" stroke="#2E7D32" stroke-width="3"/>
+<text x="390" y="142" font-family="DejaVu Sans" font-size="18" font-weight="bold" text-anchor="middle" fill="#2E7D32">CORE 1 · adquisición y DSP</text>
+<text x="390" y="162" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">prioridad alta, sin bloqueos; nunca espera al motor</text>
+<rect x="95" y="190" width="590" height="108" rx="12" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text x="390.0" y="228.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#2E7D32">T1  sensor_adc  (prio 10)</text>
+<text x="390.0" y="250.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">ADC1 continuo + DMA · 8 kHz</text>
+<text x="390.0" y="268.28999999999996" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">bloques de 4096 muestras → ring buffer</text>
+<rect x="95" y="318" width="590" height="108" rx="12" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text x="390.0" y="356.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#2E7D32">T2  sensor_i2s  (prio 9)</text>
+<text x="390.0" y="378.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">INMP441 · I²S · 16 kHz · 24 bits</text>
+<text x="390.0" y="396.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">canal de comparación</text>
+<rect x="95" y="446" width="590" height="140" rx="12" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text x="390.0" y="491.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#2E7D32">T3  pitch_est  (prio 8)</text>
+<text x="390.0" y="513.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">ventana Hann → FFT 4096 → interpolación parabólica</text>
+<text x="390.0" y="531.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">o YIN para cuerdas graves → cents respecto al objetivo</text>
+<text x="390.0" y="549.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">rechazo de armónicos y de transitorios</text>
+<rect x="95" y="606" width="590" height="90" rx="12" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+<text x="390.0" y="644.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#2E7D32">T4  telemetría  (prio 3)</text>
+<text x="390.0" y="666.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">log por UART / USB Serial JTAG para SIL y HIL</text>
+<line x1="390" y1="298" x2="390.0" y2="306.4" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+<polygon points="390.0,316.0 384.9,305.1 395.1,305.1" fill="#2E7D32"/>
+<line x1="390" y1="426" x2="390.0" y2="434.4" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+<polygon points="390.0,444.0 384.9,433.1 395.1,433.1" fill="#2E7D32"/>
+<line x1="390" y1="586" x2="390.0" y2="594.4" stroke="#2E7D32" stroke-width="2" stroke-linecap="round"/>
+<polygon points="390.0,604.0 384.9,593.1 395.1,593.1" fill="#2E7D32"/>
+<text x="500" y="312" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#6D8B74">ring buffer SPSC</text>
+<rect x="95" y="720" width="590" height="72" rx="8" fill="#FFFFFF" stroke="#A5D6A7" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="390" y="744" font-family="DejaVu Sans" font-size="12" font-weight="bold" text-anchor="middle" fill="#2E7D32">Regla de oro</text>
+<text x="390" y="766" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#546E7A">el Core 1 solo publica "cents": jamás escribe GPIO del motor.</text>
+<text x="390" y="784" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#546E7A">Así una FFT lenta no puede hacer perder pasos.</text>
+<rect x="760" y="110" width="170" height="700" rx="16" fill="#FFFDF5" stroke="#EF6C00" stroke-width="3"/>
+<text x="845" y="142" font-family="DejaVu Sans" font-size="17" font-weight="bold" text-anchor="middle" fill="#EF6C00">IPC</text>
+<text x="845" y="162" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">FreeRTOS</text>
+<rect x="775" y="176" width="140" height="146" rx="12" fill="#FFFFFF" stroke="#EF6C00" stroke-width="2"/>
+<text x="845.0" y="224.04" font-family="DejaVu Sans" font-size="14" font-weight="bold" text-anchor="middle" fill="#EF6C00">Flags</text>
+<text x="845.0" y="246.04" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#37474F">EventGroup</text>
+<text x="845.0" y="264.03999999999996" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#37474F">motor_moving</text>
+<text x="845.0" y="282.03999999999996" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#37474F">sample_ready</text>
+<rect x="775" y="430" width="140" height="120" rx="12" fill="#FFF3E0" stroke="#EF6C00" stroke-width="2"/>
+<text x="845.0" y="468.04" font-family="DejaVu Sans" font-size="14" font-weight="bold" text-anchor="middle" fill="#EF6C00">q_pitch</text>
+<text x="845.0" y="488.48" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#37474F">Queue</text>
+<text x="845.0" y="504.48" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#37474F">depth 4</text>
+<text x="845.0" y="520.48" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#37474F">xQueueSend</text>
+<text x="845" y="340" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">se pone en 1</text>
+<text x="845" y="354" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">mientras gira</text>
+<text x="845" y="596" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">bloqueante,</text>
+<text x="845" y="610" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">timeout 0</text>
+<rect x="970" y="110" width="630" height="700" rx="16" fill="#E3F2FD" stroke="#1565C0" stroke-width="3"/>
+<text x="1285" y="142" font-family="DejaVu Sans" font-size="18" font-weight="bold" text-anchor="middle" fill="#1565C0">CORE 0 · control y UI</text>
+<text x="1285" y="162" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">determinista: los pulsos STEP nunca dependen del DSP</text>
+<rect x="1000" y="190" width="570" height="150" rx="12" fill="#FFFFFF" stroke="#1565C0" stroke-width="2"/>
+<text x="1285.0" y="249.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#1565C0">T5  fsm  (prio 12)</text>
+<text x="1285.0" y="271.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">consume q_pitch · LISTEN / PROBE / ACT / WAIT / ERROR</text>
+<text x="1285.0" y="289.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">banda muerta ±3 cents · seguridad de sobretensión</text>
+<rect x="1000" y="365" width="570" height="150" rx="12" fill="#FFFFFF" stroke="#1565C0" stroke-width="2"/>
+<text x="1285.0" y="424.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#1565C0">T6  motor_ctrl  (prio 11)</text>
+<text x="1285.0" y="446.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">MCPWM por hardware (STEP) · rampa de aceleración</text>
+<text x="1285.0" y="464.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">DIR / EN / conteo de pasos · ráfagas acotadas</text>
+<rect x="1000" y="540" width="570" height="120" rx="12" fill="#FFFFFF" stroke="#1565C0" stroke-width="2"/>
+<text x="1285.0" y="584.22" font-family="DejaVu Sans" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#1565C0">T7  ui  (prio 6)</text>
+<text x="1285.0" y="606.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">6 pulsadores por ISR → cola de eventos</text>
+<text x="1285.0" y="624.29" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">LEDs: afinada / girando / error</text>
+<rect x="1000" y="685" width="570" height="90" rx="12" fill="#ECEFF1" stroke="#455A64" stroke-width="2"/>
+<text x="1285.0" y="722.86" font-family="DejaVu Sans" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#455A64">ISR  GPIO</text>
+<text x="1285.0" y="744.79" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">flanco de bajada: solo encola (sin lógica pesada)</text>
+<line x1="1285" y1="685" x2="1285.0" y2="671.6" stroke="#455A64" stroke-width="2" stroke-linecap="round"/>
+<polygon points="1285.0,662.0 1290.1,672.9 1279.9,672.9" fill="#455A64"/>
+<line x1="690" y1="500" x2="763.4689267961459" y2="491.1483220727535" stroke="#EF6C00" stroke-width="3" stroke-linecap="round"/>
+<polygon points="773.0,490.0 762.8,496.3 761.6,486.3" fill="#EF6C00"/>
+<rect x="718.7" y="471.1" width="32.6" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="735" y="481.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#EF6C00">cents</text>
+<polyline points="917,470 945,470 945,270 998,270" fill="none" stroke="#EF6C00" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="998.0,270.0 987.1,275.1 987.1,264.9" fill="#EF6C00"/>
+<rect x="915.4" y="373.1" width="59.2" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="945" y="383.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#EF6C00">T5 consume</text>
+<line x1="998" y1="240" x2="927.6" y2="240.0" stroke="#EF6C00" stroke-width="3" stroke-linecap="round"/>
+<polygon points="918.0,240.0 928.9,234.9 928.9,245.1" fill="#EF6C00"/>
+<line x1="773" y1="240" x2="701.6" y2="240.0" stroke="#EF6C00" stroke-width="3" stroke-linecap="round"/>
+<polygon points="692.0,240.0 702.9,234.9 702.9,245.1" fill="#EF6C00"/>
+<rect x="697.8" y="213.5" width="66.5" height="13.0" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="731" y="223.15" font-family="DejaVu Sans" font-size="9" font-weight="normal" text-anchor="middle" fill="#EF6C00">motor_moving</text>
+<rect x="60" y="840" width="1540" height="120" rx="10" fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1.6"/>
+<text x="80" y="868" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#37474F">Presupuesto de tiempo</text>
+<text x="80" y="894" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#546E7A">4096 muestras a 8 kHz = 512 ms de ventana.  FFT real de 4096 puntos con esp-dsp: ≈1,5 ms a 240 MHz.</text>
+<text x="80" y="916" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#546E7A">Carga de CPU del DSP &lt; 2 %.  Pilas: 8 KB para T3, 4 KB para el resto.  WDT de 5 s en cada tarea.</text>
+<text x="80" y="940" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#546E7A">Asignación estática: sin malloc en tiempo de ejecución (evita fragmentación y bloqueos).</text>
+</svg>

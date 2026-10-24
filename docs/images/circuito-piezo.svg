@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="900" viewBox="0 0 1560 900">
+<rect width="1560" height="900" fill="#FFFFFF"/>
+<text x="40" y="50" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="start" fill="#0D2E4A">Acondicionamiento del piezo de contacto</text>
+<text x="40" y="78" font-family="DejaVu Sans" font-size="14" font-weight="normal" text-anchor="start" fill="#546E7A">Ganancia total ×100 (40 dB) · salida centrada en 1,65 V · fondo de escala 0 a 3,1 V</text>
+<circle cx="120" cy="435" r="50" fill="#FFFDE7" stroke="#EF6C00" stroke-width="3"/>
+<line x1="74" y1="435" x2="166" y2="435" stroke="#EF6C00" stroke-width="1.6" stroke-linecap="round"/>
+<text x="120" y="431" font-family="DejaVu Sans" font-size="15" font-weight="bold" text-anchor="middle" fill="#EF6C00">P1</text>
+<text x="120" y="453" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">piezo</text>
+<text x="120" y="513" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#5D4037">disco 27 mm</text>
+<text x="120" y="531" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#8D6E63">≈ 25 nF</text>
+<line x1="170" y1="435" x2="232" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="232" y1="409" x2="232" y2="461" stroke="#5D4037" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="247" y1="409" x2="247" y2="461" stroke="#5D4037" stroke-width="4.5" stroke-linecap="round"/>
+<line x1="247" y1="435" x2="318" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<text x="240" y="395" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#5D4037">C1 · 100 nF</text>
+<circle cx="318" cy="435" r="4.5" fill="#5D4037" stroke="#5D4037" stroke-width="1"/>
+<line x1="318" y1="435" x2="448" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="318" y1="435" x2="318" y2="398" stroke="#5D4037" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="307.0" y="340" width="22" height="58" rx="3" fill="#FFFFFF" stroke="#5D4037" stroke-width="2"/>
+<line x1="318" y1="340" x2="318" y2="300" stroke="#5D4037" stroke-width="2.4" stroke-linecap="round"/>
+<text x="340" y="358" font-family="DejaVu Sans" font-size="12" font-weight="bold" text-anchor="start" fill="#5D4037">R1</text>
+<text x="340" y="376" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#8D6E63">1 MΩ</text>
+<line x1="318" y1="300" x2="670" y2="300" stroke="#EF6C00" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="379.9" y="273.7" width="100.2" height="16.7" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="430" y="286.025" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#EF6C00">VBIAS = 1,65 V</text>
+<rect x="230" y="160" width="220" height="70" rx="8" fill="#FFF3E0" stroke="#EF6C00" stroke-width="1.6"/>
+<text x="340" y="186" font-family="DejaVu Sans" font-size="12" font-weight="bold" text-anchor="middle" fill="#E65100">Generador de VBIAS</text>
+<text x="340" y="206" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#6D4C41">3V3 → divisor 10k/10k</text>
+<text x="340" y="222" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#6D4C41">+ 10 µF + 100 nF</text>
+<line x1="340" y1="230" x2="340.0" y2="288.4" stroke="#EF6C00" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="340.0,298.0 334.9,287.1 345.1,287.1" fill="#EF6C00"/>
+<polygon points="448,365 448,505 598,435" fill="#FFFFFF" stroke="#EF6C00" stroke-width="2.6"/>
+<text x="464" y="407" font-family="DejaVu Sans" font-size="20" font-weight="normal" text-anchor="start" fill="#EF6C00">−</text>
+<text x="464" y="441" font-family="DejaVu Sans" font-size="20" font-weight="normal" text-anchor="start" fill="#EF6C00">+</text>
+<text x="528" y="429" font-family="DejaVu Sans" font-size="15" font-weight="bold" text-anchor="middle" fill="#EF6C00">×10,1</text>
+<text x="528" y="449" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#8D6E63">MCP6002/A</text>
+<line x1="448" y1="402" x2="418" y2="402" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="418" y1="402" x2="418" y2="510" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="418" y1="510" x2="500" y2="510" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="500" y="499.0" width="58" height="22" rx="3" fill="#FFFFFF" stroke="#5D4037" stroke-width="2"/>
+<line x1="558" y1="510" x2="598" y2="510" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="598" y1="510" x2="598" y2="435" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<text x="529" y="541" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">Rf 91k</text>
+<line x1="418" y1="402" x2="418" y2="348" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="407.0" y="312" width="22" height="36" rx="3" fill="#FFFFFF" stroke="#5D4037" stroke-width="2"/>
+<line x1="418" y1="312" x2="418" y2="300" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<text x="406" y="335" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="end" fill="#8D6E63">Rg 10k</text>
+<polygon points="698,365 698,505 848,435" fill="#FFFFFF" stroke="#EF6C00" stroke-width="2.6"/>
+<text x="714" y="407" font-family="DejaVu Sans" font-size="20" font-weight="normal" text-anchor="start" fill="#EF6C00">−</text>
+<text x="714" y="441" font-family="DejaVu Sans" font-size="20" font-weight="normal" text-anchor="start" fill="#EF6C00">+</text>
+<text x="778" y="429" font-family="DejaVu Sans" font-size="15" font-weight="bold" text-anchor="middle" fill="#EF6C00">×10,1</text>
+<text x="778" y="449" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#8D6E63">MCP6002/B</text>
+<line x1="698" y1="402" x2="668" y2="402" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="668" y1="402" x2="668" y2="510" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="668" y1="510" x2="750" y2="510" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="750" y="499.0" width="58" height="22" rx="3" fill="#FFFFFF" stroke="#5D4037" stroke-width="2"/>
+<line x1="808" y1="510" x2="848" y2="510" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="848" y1="510" x2="848" y2="435" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<text x="779" y="541" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">Rf 91k</text>
+<line x1="668" y1="402" x2="668" y2="348" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="657.0" y="312" width="22" height="36" rx="3" fill="#FFFFFF" stroke="#5D4037" stroke-width="2"/>
+<line x1="668" y1="312" x2="668" y2="300" stroke="#5D4037" stroke-width="2.2" stroke-linecap="round"/>
+<text x="656" y="335" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="end" fill="#8D6E63">Rg 10k</text>
+<line x1="598" y1="435" x2="698" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="418" y1="312" x2="418" y2="300" stroke="#EF6C00" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="668" y1="312" x2="668" y2="300" stroke="#EF6C00" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="848" y1="435" x2="910" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="910" y="389" width="150" height="92" rx="8" fill="#FFFFFF" stroke="#EF6C00" stroke-width="2.2"/>
+<text x="985" y="417" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="middle" fill="#EF6C00">LPF RC</text>
+<text x="985" y="439" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#5D4037">1 kΩ + 39 nF</text>
+<text x="985" y="459" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#8D6E63">fc ≈ 4,1 kHz</text>
+<line x1="1060" y1="435" x2="1120" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="1120" y="340" width="220" height="190" rx="8" fill="#FFFDE7" stroke="#C62828" stroke-width="1.8" stroke-dasharray="7 5"/>
+<text x="1132" y="365" font-family="DejaVu Sans" font-size="12.5" font-weight="bold" text-anchor="start" fill="#C62828">Protección</text>
+<text x="1132" y="385" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#5D4037">BAT54S</text>
+<rect x="1136" y="426.0" width="40" height="18" rx="3" fill="#FFFFFF" stroke="#5D4037" stroke-width="2"/>
+<text x="1156" y="419" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#5D4037">1 kΩ</text>
+<line x1="1176" y1="435" x2="1240" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="1240" cy="435" r="4.5" fill="#5D4037" stroke="#5D4037" stroke-width="1"/>
+<line x1="1240" y1="435" x2="1240" y2="380" stroke="#C62828" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="1228,380 1252,380 1240,365.6" fill="#FFFFFF" stroke="#C62828" stroke-width="2"/>
+<line x1="1228" y1="365.6" x2="1252" y2="365.6" stroke="#C62828" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="1240" y1="365.6" x2="1240" y2="357" stroke="#C62828" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1260" y="361" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="start" fill="#C62828">a 3V3</text>
+<line x1="1240" y1="435" x2="1240" y2="497" stroke="#C62828" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="1228,497 1252,497 1240,482.6" fill="#FFFFFF" stroke="#C62828" stroke-width="2"/>
+<line x1="1228" y1="482.6" x2="1252" y2="482.6" stroke="#C62828" stroke-width="2.6" stroke-linecap="round"/>
+<text x="1262" y="493" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="start" fill="#C62828">a GND</text>
+<line x1="1240" y1="435" x2="1348" y2="435" stroke="#5D4037" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="1348" y="387" width="150" height="96" rx="12" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+<text x="1423.0" y="419.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" text-anchor="middle" fill="#1565C0">ADC1</text>
+<text x="1423.0" y="441.54" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#37474F">GPIO1</text>
+<text x="1423.0" y="459.54" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#37474F">atenuación 12 dB</text>
+<rect x="60" y="640" width="1440" height="150" rx="10" fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1.6"/>
+<text x="80" y="668" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#37474F">Lista de valores</text>
+<text x="80" y="696" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">P1</text>
+<text x="138" y="696" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">disco piezo 27 mm, ≈25 nF</text>
+<text x="800" y="696" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">C1</text>
+<text x="858" y="696" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">100 nF · acoplo (fc ≈6 Hz con R1)</text>
+<text x="80" y="720" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">R1</text>
+<text x="138" y="720" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">1 MΩ · polariza la entrada (no usar &lt; 1 M)</text>
+<text x="800" y="720" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">Bias</text>
+<text x="858" y="720" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">divisor 10k/10k + 10 µF + 100 nF</text>
+<text x="80" y="744" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">U1</text>
+<text x="138" y="744" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">MCP6002 (rail-to-rail, 3,3 V)</text>
+<text x="800" y="744" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">Rf/Rg</text>
+<text x="858" y="744" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">91k / 10k por etapa (×10,1)</text>
+<text x="80" y="768" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">LPF</text>
+<text x="138" y="768" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">1 kΩ + 39 nF → 4,1 kHz</text>
+<text x="800" y="768" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#E65100">D1</text>
+<text x="858" y="768" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#37474F">BAT54S + 1 kΩ en serie al ADC</text>
+<rect x="60" y="806" width="1440" height="62" rx="10" fill="#FFF8E1" stroke="#EF6C00" stroke-width="1.6"/>
+<text x="80" y="830" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#4E342E">¿Por qué no usar un divisor de 100 kΩ? El piezo es una fuente capacitiva de ≈25 nF;</text>
+<text x="80" y="850" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#4E342E">con menos de 1 MΩ el corte sube a ≈64 Hz y se pierde la 6ª cuerda (82,4 Hz).</text>
+</svg>
