@@ -13,6 +13,9 @@ managed_components/
 # Local editor settings
 .vscode/
 
+# oh-my-embedded MCP build log
+mcp-process.log
+
 # Generic compiled files
 *.o
 *.a
