@@ -16,6 +16,9 @@ managed_components/
 # oh-my-embedded MCP build log
 mcp-process.log
 
+# Python cache
+__pycache__/
+
 # Generic compiled files
 *.o
 *.a

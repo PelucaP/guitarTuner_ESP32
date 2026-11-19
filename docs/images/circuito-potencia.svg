@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1660" height="1090" viewBox="0 0 1660 1090">
+<rect width="1660" height="1090" fill="#FFFFFF"/>
+<text x="40" y="50" font-family="DejaVu Sans" font-size="26" font-weight="bold" text-anchor="start" fill="#0D2E4A">Circuito de potencia y cableado del motor</text>
+<text x="40" y="78" font-family="DejaVu Sans" font-size="14" font-weight="normal" text-anchor="start" fill="#546E7A">Dos fuentes separadas y tierra común. La FeatherS3 nunca ve los 12 V.</text>
+<rect x="60" y="100" width="130" height="86" rx="12" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="125.0" y="136.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" text-anchor="middle" fill="#E65100">J1</text>
+<text x="125.0" y="158.54" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#37474F">jack 12 V / 2 A</text>
+<line x1="190" y1="143" x2="240" y2="143" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="240" y="128" width="64" height="30" rx="3" fill="#FFFDE7" stroke="#E65100" stroke-width="2"/>
+<line x1="240" y1="143" x2="304" y2="143" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<text x="272" y="190" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#E65100">F1 · 2 A</text>
+<polygon points="322,128 322,158 350,143" fill="#FFFDE7" stroke="#E65100" stroke-width="2"/>
+<line x1="350" y1="128" x2="350" y2="158" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="304" y1="143" x2="322" y2="143" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="350" y1="143" x2="400" y2="143" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<text x="336" y="190" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#E65100">D1 · SS34</text>
+<line x1="400" y1="143" x2="700" y2="143" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="430" cy="143" r="4.5" fill="#E65100" stroke="#E65100" stroke-width="1"/>
+<circle cx="600" cy="143" r="4.5" fill="#E65100" stroke="#E65100" stroke-width="1"/>
+<rect x="403.9" y="115.7" width="42.2" height="16.7" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="425" y="128.025" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#E65100">+12 V</text>
+<line x1="430" y1="143" x2="430" y2="339.5" stroke="#E65100" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="406" y1="339.5" x2="454" y2="339.5" stroke="#E65100" stroke-width="4" stroke-linecap="round"/>
+<line x1="406" y1="363.5" x2="454" y2="363.5" stroke="#E65100" stroke-width="4" stroke-linecap="round"/>
+<line x1="430" y1="363.5" x2="430" y2="560" stroke="#E65100" stroke-width="2.4" stroke-linecap="round"/>
+<text x="390" y="349.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="end" fill="#5D4037">C1 · 470 µF</text>
+<text x="390" y="366.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="end" fill="#8D6E63">35 V · bulk</text>
+<line x1="600" y1="143" x2="600" y2="339.5" stroke="#E65100" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="576" y1="339.5" x2="624" y2="339.5" stroke="#E65100" stroke-width="4" stroke-linecap="round"/>
+<line x1="576" y1="363.5" x2="624" y2="363.5" stroke="#E65100" stroke-width="4" stroke-linecap="round"/>
+<line x1="600" y1="363.5" x2="600" y2="560" stroke="#E65100" stroke-width="2.4" stroke-linecap="round"/>
+<text x="560" y="349.5" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="end" fill="#5D4037">C2 · 100 µF</text>
+<text x="560" y="366.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="end" fill="#8D6E63">35 V · junto al driver</text>
+<line x1="430" y1="560" x2="430" y2="900" stroke="#E65100" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="600" y1="560" x2="600" y2="900" stroke="#E65100" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="700" y="100" width="380" height="300" rx="14" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="3"/>
+<text x="890" y="132" font-family="DejaVu Sans" font-size="19" font-weight="bold" text-anchor="middle" fill="#6A1B9A">A4988</text>
+<text x="890" y="152" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#4A148C">módulo stepstick + disipador</text>
+<line x1="700" y1="143" x2="735" y2="143" stroke="#B45309" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="773.6" y="159.3" width="36.9" height="17.4" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="792" y="172.2" font-family="DejaVu Sans" font-size="12" font-weight="bold" text-anchor="middle" fill="#E65100">VMOT</text>
+<text x="792" y="188" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#6D4C41">8 – 35 V</text>
+<line x1="700" y1="240" x2="650" y2="240" stroke="#6A1B9A" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="650" y1="240" x2="650" y2="900" stroke="#6A1B9A" stroke-width="2.4" stroke-linecap="round"/>
+<rect x="660.8" y="218.0" width="28.5" height="15.9" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="675" y="229.85" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#6A1B9A">GND</text>
+<line x1="1080" y1="180" x2="1130" y2="180" stroke="#37474F" stroke-width="3" stroke-linecap="round"/>
+<rect x="1094.8" y="156.0" width="20.3" height="15.9" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1105" y="167.85" font-family="DejaVu Sans" font-size="11" font-weight="bold" text-anchor="middle" fill="#37474F">1A</text>
+<line x1="1080" y1="235" x2="1130" y2="235" stroke="#2E7D32" stroke-width="3" stroke-linecap="round"/>
+<rect x="1094.8" y="211.0" width="20.3" height="15.9" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1105" y="222.85" font-family="DejaVu Sans" font-size="11" font-weight="bold" text-anchor="middle" fill="#2E7D32">1B</text>
+<line x1="1080" y1="290" x2="1130" y2="290" stroke="#C62828" stroke-width="3" stroke-linecap="round"/>
+<rect x="1094.8" y="266.0" width="20.3" height="15.9" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1105" y="277.85" font-family="DejaVu Sans" font-size="11" font-weight="bold" text-anchor="middle" fill="#C62828">2A</text>
+<line x1="1080" y1="345" x2="1130" y2="345" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+<rect x="1094.8" y="321.0" width="20.3" height="15.9" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1105" y="332.85" font-family="DejaVu Sans" font-size="11" font-weight="bold" text-anchor="middle" fill="#1565C0">2B</text>
+<rect x="1130" y="90" width="300" height="330" rx="14" fill="#FFFFFF" stroke="#AD1457" stroke-width="2.5"/>
+<circle cx="1250" cy="255" r="62" fill="#FCE4EC" stroke="#AD1457" stroke-width="3"/>
+<circle cx="1250" cy="255" r="26" fill="#FFFFFF" stroke="#AD1457" stroke-width="2"/>
+<line x1="1312" y1="255" x2="1360" y2="255" stroke="#90A4AE" stroke-width="6" stroke-linecap="round"/>
+<text x="1250" y="348" font-family="DejaVu Sans" font-size="13.5" font-weight="bold" text-anchor="middle" fill="#AD1457">NEMA-17 17HS4401</text>
+<text x="1250" y="368" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#7B1FA2">bipolar · 1,5 A/fase</text>
+<text x="1250" y="388" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#7B1FA2">0,4 N·m · 1,8°</text>
+<text x="1250" y="408" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#7B1FA2">eje 5 mm</text>
+<line x1="725" y1="400" x2="725" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="714.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="725" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">VDD</text>
+<line x1="770" y1="400" x2="770" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="761.7" y="441.1" width="16.6" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="770" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">EN</text>
+<line x1="815" y1="400" x2="815" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="804.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="815" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">MS1</text>
+<line x1="855" y1="400" x2="855" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="844.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="855" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">MS2</text>
+<line x1="895" y1="400" x2="895" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="884.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="895" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">MS3</text>
+<line x1="935" y1="400" x2="935" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="924.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="935" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">RST</text>
+<line x1="975" y1="400" x2="975" y2="432" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="964.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="975" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">SLP</text>
+<line x1="815" y1="480" x2="975" y2="480" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="815" y1="432" x2="815" y2="480" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="815" cy="480" r="3.5" fill="#1565C0" stroke="#1565C0" stroke-width="1"/>
+<line x1="855" y1="432" x2="855" y2="480" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="855" cy="480" r="3.5" fill="#1565C0" stroke="#1565C0" stroke-width="1"/>
+<line x1="895" y1="432" x2="895" y2="480" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="895" cy="480" r="3.5" fill="#1565C0" stroke="#1565C0" stroke-width="1"/>
+<line x1="935" y1="432" x2="935" y2="480" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="935" cy="480" r="3.5" fill="#1565C0" stroke="#1565C0" stroke-width="1"/>
+<line x1="975" y1="432" x2="975" y2="480" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<circle cx="975" cy="480" r="3.5" fill="#1565C0" stroke="#1565C0" stroke-width="1"/>
+<rect x="830.8" y="493.1" width="128.4" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="895" y="503.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">3V3 → 1/16 de micropaso</text>
+<line x1="1020" y1="400" x2="1020" y2="655" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="1006.4" y="441.1" width="27.3" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1020" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">STEP</text>
+<rect x="1005.8" y="632.8" width="28.4" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1020" y="643.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#1565C0">IO33</text>
+<line x1="1060" y1="400" x2="1060" y2="655" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="1049.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1060" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">DIR</text>
+<rect x="1045.8" y="632.8" width="28.4" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1060" y="643.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#1565C0">IO38</text>
+<line x1="725" y1="400" x2="725" y2="655" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="714.0" y="441.1" width="22.0" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="725" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">VDD</text>
+<rect x="713.6" y="632.8" width="22.8" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="725" y="643.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#1565C0">3V3</text>
+<line x1="770" y1="400" x2="770" y2="655" stroke="#1565C0" stroke-width="1.8" stroke-linecap="round"/>
+<rect x="761.7" y="441.1" width="16.6" height="13.8" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="770" y="451.325" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#1565C0">EN</text>
+<rect x="755.8" y="632.8" width="28.4" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="770" y="643.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#1565C0">IO42</text>
+<text x="1120" y="452" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="start" fill="#546E7A">EN opcional: a GND = siempre habilitado</text>
+<text x="1120" y="472" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="start" fill="#546E7A">RST = SLP = 3V3</text>
+<rect x="690" y="660" width="400" height="210" rx="14" fill="#E3F2FD" stroke="#1565C0" stroke-width="3"/>
+<text x="890" y="692" font-family="DejaVu Sans" font-size="16" font-weight="bold" text-anchor="middle" fill="#1565C0">ESP32-S3 FeatherS3</text>
+<text x="890" y="711" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#37474F">solo lógica 3,3 V</text>
+<text x="890" y="836" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#546E7A">pines usados: 3V3 · IO42 · IO33 · IO38 · GND · USB (5 V)</text>
+<rect x="60" y="730" width="150" height="86" rx="12" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+<text x="135.0" y="757.4" font-family="DejaVu Sans" font-size="15" font-weight="bold" text-anchor="middle" fill="#E65100">USB-C</text>
+<text x="135.0" y="779.54" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#37474F">5 V / 1 A</text>
+<text x="135.0" y="797.54" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#37474F">cargador o power bank</text>
+<polyline points="210,800 688,800" fill="none" stroke="#1565C0" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="688.0,800.0 677.1,805.1 677.1,794.9" fill="#1565C0"/>
+<rect x="345.9" y="778.0" width="168.2" height="15.9" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="430" y="789.85" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="middle" fill="#1565C0">5 V → pin USB (nunca 12 V)</text>
+<rect x="60" y="420" width="520" height="170" rx="10" fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1.6"/>
+<text x="80" y="448" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#37474F">Presupuesto de corriente (a 1,0 A/fase)</text>
+<text x="80" y="474" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#546E7A">Motor: 2 × 1,0² × 1,8 Ω = 3,6 W  →  0,33 A de 12 V</text>
+<text x="80" y="496" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#546E7A">Lógica: 0,10 A a 3,3 V  →  0,08 A de 5 V</text>
+<text x="80" y="518" font-family="DejaVu Sans" font-size="11.5" font-weight="bold" text-anchor="start" fill="#2E7D32">Fuente 12 V / 2 A: margen &gt; 3×</text>
+<text x="80" y="548" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#8D6E63">El pin 5 V de la Feather alimenta solo la lógica:</text>
+<text x="80" y="568" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#8D6E63">el motor jamás pasa por la placa.</text>
+<rect x="1110" y="516" width="490" height="258" rx="10" fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1.6"/>
+<text x="1130" y="546" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#37474F">Secuencia de puesta en marcha</text>
+<text x="1130" y="578" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">1. Unir GND de ambas fuentes (cable corto).</text>
+<text x="1130" y="607" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">2. Ajustar Vref con el motor desconectado.</text>
+<text x="1130" y="636" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">3. Energizar 12 V (driver en reposo).</text>
+<text x="1130" y="665" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">4. Conectar 5 V / USB-C a la Feather.</text>
+<text x="1130" y="694" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">5. Verificar STEP/DIR con un solo paso.</text>
+<text x="1130" y="723" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">6. Conectar el motor (nunca en caliente).</text>
+<line x1="60" y1="900" x2="1100" y2="900" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+<circle cx="430" cy="900" r="4.5" fill="#263238" stroke="#263238" stroke-width="1"/>
+<circle cx="600" cy="900" r="4.5" fill="#263238" stroke="#263238" stroke-width="1"/>
+<circle cx="650" cy="900" r="4.5" fill="#263238" stroke="#263238" stroke-width="1"/>
+<text x="60" y="878" font-family="DejaVu Sans" font-size="12" font-weight="bold" text-anchor="start" fill="#263238">GND común: único punto de unión (tierra en estrella)</text>
+<rect x="60" y="940" width="700" height="110" rx="10" fill="#FFF8E1" stroke="#EF6C00" stroke-width="1.6"/>
+<text x="78" y="966" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#E65100">Ajuste de corriente (obligatorio)</text>
+<text x="78" y="990" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#4E342E">I = Vref / (8 × Rsense).  Con Rsense = 0,05 Ω:</text>
+<text x="78" y="1012" font-family="DejaVu Sans" font-size="12" font-weight="bold" text-anchor="start" fill="#4E342E">Vref = 0,40 V  →  1,0 A/fase  (recomendado)</text>
+<text x="78" y="1034" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#6D4C41">Medir con el motor desconectado. Nunca 1,5 A sin disipador.</text>
+<rect x="790" y="940" width="500" height="110" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+<text x="808" y="966" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#C62828">Advertencias</text>
+<text x="808" y="990" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#B71C1C">· NUNCA 12 V al pin 5 V ni a VBAT de la Feather.</text>
+<text x="808" y="1012" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#B71C1C">· No desconectar el motor con VMOT energizado.</text>
+<text x="808" y="1034" font-family="DejaVu Sans" font-size="12" font-weight="normal" text-anchor="start" fill="#B71C1C">· GND común SIEMPRE: sin él, STEP/DIR flotan.</text>
+<text x="1130" y="930" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="start" fill="#78909C">cruce sin punto = sin conexión</text>
+</svg>

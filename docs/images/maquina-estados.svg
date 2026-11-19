@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1010" viewBox="0 0 1560 1010">
+<rect width="1560" height="1010" fill="#FFFFFF"/>
+<text x="40" y="50" font-family="DejaVu Sans" font-size="25" font-weight="bold" text-anchor="start" fill="#0D2E4A">Máquina de estados finitos del lazo de afinación</text>
+<text x="40" y="78" font-family="DejaVu Sans" font-size="14" font-weight="normal" text-anchor="start" fill="#546E7A">La dirección de giro se mide (PROBE), no se adivina con un IMU.</text>
+<circle cx="150" cy="210" r="66" fill="#ECEFF1" stroke="#455A64" stroke-width="3"/>
+<text x="150" y="215" font-family="DejaVu Sans" font-size="15.5" font-weight="bold" text-anchor="middle" fill="#455A64">INIT</text>
+<text x="150" y="235" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#546E7A">auto-test</text>
+<circle cx="430" cy="470" r="95" fill="#E3F2FD" stroke="#1565C0" stroke-width="3"/>
+<text x="430" y="475" font-family="DejaVu Sans" font-size="15.5" font-weight="bold" text-anchor="middle" fill="#1565C0">LISTEN</text>
+<text x="430" y="495" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#546E7A">mide y compara</text>
+<circle cx="870" cy="190" r="86" fill="#FFF3E0" stroke="#E65100" stroke-width="3"/>
+<text x="870" y="195" font-family="DejaVu Sans" font-size="15.5" font-weight="bold" text-anchor="middle" fill="#E65100">PROBE</text>
+<text x="870" y="215" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#546E7A">Δf por paso</text>
+<circle cx="1320" cy="470" r="86" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="3"/>
+<text x="1320" y="475" font-family="DejaVu Sans" font-size="15.5" font-weight="bold" text-anchor="middle" fill="#6A1B9A">ACT</text>
+<text x="1320" y="495" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#546E7A">gira N pasos</text>
+<circle cx="870" cy="770" r="82" fill="#ECEFF1" stroke="#455A64" stroke-width="3"/>
+<text x="870" y="775" font-family="DejaVu Sans" font-size="15.5" font-weight="bold" text-anchor="middle" fill="#455A64">WAIT</text>
+<text x="870" y="795" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#546E7A">asentamiento</text>
+<circle cx="190" cy="800" r="78" fill="#FFEBEE" stroke="#C62828" stroke-width="3"/>
+<text x="190" y="805" font-family="DejaVu Sans" font-size="15.5" font-weight="bold" text-anchor="middle" fill="#C62828">ERROR</text>
+<text x="190" y="825" font-family="DejaVu Sans" font-size="9.5" font-weight="normal" text-anchor="middle" fill="#546E7A">estado seguro</text>
+<line x1="196" y1="254" x2="364.6525239753073" y2="395.82144061559933" stroke="#455A64" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="372.0,402.0 360.4,398.9 366.9,391.1" fill="#455A64"/>
+<rect x="209.7" y="304.4" width="80.6" height="15.2" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="250" y="315.675" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#455A64">auto-test OK</text>
+<line x1="498" y1="404" x2="791.6107121447393" y2="240.6668886082245" stroke="#E65100" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="800.0,236.0 793.0,245.7 788.0,236.9" fill="#E65100"/>
+<rect x="552.7" y="292.4" width="174.6" height="15.2" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="640" y="303.675" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#E65100">|cents| &gt; 3 y estable 600 ms</text>
+<path d="M 830 274 Q 672.6 374.7 494.8 385.5" fill="none" stroke="#2E7D32" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="486.0,386.0 495.7,380.8 496.2,390.0" fill="#2E7D32"/>
+<rect x="573.8" y="364.8" width="172.4" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="660" y="375.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#2E7D32">ya afinada: K ≈ 0 → LED verde</text>
+<line x1="944" y1="238" x2="1247.570138220168" y2="403.4068060815018" stroke="#6A1B9A" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="1256.0,408.0 1244.0,407.2 1248.9,398.3" fill="#6A1B9A"/>
+<rect x="1030.6" y="298.4" width="162.9" height="15.2" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1112" y="309.675" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#6A1B9A">signo + ganancia K medidos</text>
+<line x1="1256" y1="532" x2="952.1992910211922" y2="717.0068420063253" stroke="#455A64" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="944.0,722.0 950.7,712.0 955.9,720.7" fill="#455A64"/>
+<rect x="1060.0" y="646.4" width="104.1" height="15.2" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="1112" y="657.675" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#455A64">ráfaga terminada</text>
+<line x1="794" y1="730" x2="508.0628153468151" y2="545.2106629792343" stroke="#455A64" stroke-width="2.6" stroke-linecap="round"/>
+<polygon points="500.0,540.0 511.9,541.6 506.4,550.2" fill="#455A64"/>
+<rect x="547.4" y="646.4" width="145.2" height="15.2" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="620" y="657.675" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#455A64">300 ms → vuelve a medir</text>
+<path d="M 337 432 C 262 440, 262 500, 337 508" fill="none" stroke="#2E7D32" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="337.0,508.0 326.6,511.6 327.6,502.3" fill="#2E7D32"/>
+<rect x="252.2" y="396.8" width="71.6" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="288" y="407.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#2E7D32">|cents| ≤ 3</text>
+<line x1="368" y1="548" x2="237.58765687004708" y2="730.193714666846" stroke="#C62828" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="232.0,738.0 234.2,726.2 242.5,732.1" fill="#C62828"/>
+<rect x="227.8" y="592.8" width="88.4" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="272" y="603.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#C62828">fuera de rango</text>
+<line x1="262" y1="782" x2="396.77860363920416" y2="574.0558686709422" stroke="#455A64" stroke-width="2.2" stroke-linecap="round"/>
+<polygon points="402.0,566.0 400.3,577.9 391.8,572.4" fill="#455A64"/>
+<rect x="353.4" y="718.8" width="77.2" height="14.5" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="392" y="729.5" font-family="DejaVu Sans" font-size="10" font-weight="normal" text-anchor="middle" fill="#455A64">reset manual</text>
+<polyline points="1259,532 1259,925 190,925 190,880" fill="none" stroke="#C62828" stroke-width="2.2" stroke-dasharray="8 5" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="190.0,880.0 195.1,890.9 184.9,890.9" fill="#C62828"/>
+<rect x="625.6" y="904.4" width="268.7" height="15.2" rx="4" fill="#FFFFFF" stroke="none" opacity="0.95"/>
+<text x="760" y="915.675" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="middle" fill="#C62828">tope de pasos / |cents| &gt; 200 / timeout 30 s</text>
+<rect x="1150" y="96" width="380" height="200" rx="10" fill="#F5F7FA" stroke="#B0BEC5" stroke-width="1.5"/>
+<text x="1170" y="124" font-family="DejaVu Sans" font-size="13" font-weight="bold" text-anchor="start" fill="#37474F">Qué hace PROBE</text>
+<text x="1170" y="150" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">1. mueve 64 micropasos y mide Δf</text>
+<text x="1170" y="172" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">2. Δf &gt; 0 tensa · Δf &lt; 0 afloja</text>
+<text x="1170" y="194" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">3. si Δf ≈ 0: prueba 128 y 256</text>
+<text x="1170" y="216" font-family="DejaVu Sans" font-size="11" font-weight="normal" text-anchor="start" fill="#546E7A">4. 3 intentos sin respuesta: ERROR</text>
+<text x="1170" y="248" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="start" fill="#8D6E63">de paso entrega K (cents/paso),</text>
+<text x="1170" y="266" font-family="DejaVu Sans" font-size="10.5" font-weight="normal" text-anchor="start" fill="#8D6E63">que usa ACT para calcular los pasos.</text>
+<rect x="60" y="952" width="1000" height="46" rx="8" fill="#FFF8E1" stroke="#EF6C00" stroke-width="1.6"/>
+<text x="78" y="981" font-family="DejaVu Sans" font-size="11.5" font-weight="normal" text-anchor="start" fill="#4E342E">PROBE deduce el signo de giro y la ganancia en el mismo movimiento: elimina el IMU y sirve como prueba de acople.</text>
+</svg>
