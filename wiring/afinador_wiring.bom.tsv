@@ -1,0 +1,20 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 wires	0.7	m	W_12V_A, W_12V_B, W_12V_C, W_12V_D, W_PGND
+2	Cable, 2 wires	0.4	m	W_CAP, W_LED, W_PIEZO
+3	Cable, 3 wires	0.2	m	W_PADC
+4	Cable, 4 wires	0.45	m	W_CTRL, W_MOT
+5	Cable, 5 wires	0.1	m	W_CFG
+6	Cable, 6 wires	0.15	m	W_I2S
+7	Cable, 8 wires	0.25	m	W_BTN
+8	Connector, 17HS4401S bipolar 4 hilos, 1.7 A - 1.5 ohm - 2.8 mH - 43 N.cm, 4 pins	1		NEMA17
+9	Connector, 6 pulsadores 6x6 mm, header 1x8, 8 pins	1		BOTONERA
+10	Connector, Acondicionamiento piezo, 1M a 1.65 V - 4k7 serie - 100 nF - BAT54S, 5 pins	1		PIEZO_COND
+11	Connector, C2 100uF/35V + C1 470uF/35V + 100nF/50V, junto a VMOT, menos de 1 cm, 2 pins	1		CAP_VMOT
+12	Connector, Disco piezo 27 mm, 2 pins	1		PIEZO
+13	Connector, ESP32-S3-DevKitC-1, 2 x 22 pines - J1 izquierda, J3 derecha, 20 pins	1		ESP32
+14	Connector, Fuente externa 12 V / 2 A, 2 pins	1		PSU_12V
+15	Connector, Fusible 2 A temporizado 5x20, 2 pins	1		F1
+16	Connector, LED verde 3 mm + R 330 ohm, 2 pins	1		LED_OK
+17	Connector, Microfono I2S 24 bits, VDD 1.62 a 3.63 V - SCK 0.5 a 3.2 MHz, 6 pins	1		INMP441
+18	Connector, Pololu DRV8825 carrier, 16 pines - VMOT 8.2 a 45 V - Rsense 0.1 ohm, 16 pins	1		DRV8825
+19	Connector, SS34 Schottky 3 A / 40 V, 2 pins	1		D1

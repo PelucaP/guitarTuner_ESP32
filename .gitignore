@@ -13,6 +13,9 @@ managed_components/
 # Local editor settings
 .vscode/
 
+# Python cache
+__pycache__/
+
 # Generic compiled files
 *.o
 *.a

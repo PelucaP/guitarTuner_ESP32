@@ -1,0 +1,226 @@
+# Afinador de guitarra - Grupo 6
+# ESP32-S3-DevKitC-1 + DRV8825 + NEMA-17 + INMP441 + piezo (solo vibracion) + 6 pulsadores
+# Fuentes y justificacion de cada valor: ver README.md
+# Generar:  wireviz afinador_wiring.yml      (labels solo ASCII: graphviz no acepta otra cosa)
+
+metadata:
+  title: Afinador de guitarra automatico - cableado
+  project: Grupo 6 / Programacion de Sistemas Embebidos
+  notes: ESP32-S3-DevKitC-1 + DRV8825 a 1/16 + NEMA-17 17HS4401S
+
+connectors:
+  ESP32:
+    type: ESP32-S3-DevKitC-1
+    subtype: 2 x 22 pines - J1 izquierda, J3 derecha
+    pinlabels: [
+      "J1-1  3V3",
+      "J1-2  3V3",
+      "J1-22 GND",
+      "J3-1  GND",
+      "J1-4  G4  BTN1",
+      "J1-5  G5  BTN2",
+      "J1-6  G6  BTN3",
+      "J1-7  G7  BTN4",
+      "J1-8  G15 BTN5",
+      "J1-9  G16 BTN6",
+      "J1-10 G17 I2S_BCLK",
+      "J1-11 G18 I2S_WS",
+      "J1-12 G8  I2S_SD",
+      "J1-15 G9  STEP",
+      "J1-16 G10 DIR",
+      "J1-17 G11 ENABLE",
+      "J1-18 G12 nFAULT",
+      "J3-4  G1  ADC1_CH0",
+      "J3-18 G21 LED_OK",
+      "J3-21 GND",
+    ]
+
+  DRV8825:
+    type: Pololu DRV8825 carrier
+    subtype: 16 pines - VMOT 8.2 a 45 V - Rsense 0.1 ohm
+    pinlabels: [
+      "ENABLE (bajo = on)",
+      "M0",
+      "M1",
+      "M2",
+      "RESET",
+      "SLEEP",
+      "STEP",
+      "DIR",
+      "VMOT",
+      "GND potencia",
+      "B2",
+      "B1",
+      "A1",
+      "A2",
+      "FAULT (bajo)",
+      "GND potencia",
+    ]
+
+  NEMA17:
+    type: 17HS4401S bipolar 4 hilos
+    subtype: 1.7 A - 1.5 ohm - 2.8 mH - 43 N.cm
+    pinlabels: ["Negro  A+", "Verde  A-", "Rojo  B+", "Azul  B-"]
+
+  INMP441:
+    type: Microfono I2S 24 bits
+    subtype: VDD 1.62 a 3.63 V - SCK 0.5 a 3.2 MHz
+    pinlabels: ["VDD", "GND", "L/R", "SCK", "WS", "SD"]
+
+  PIEZO:
+    type: Disco piezo 27 mm
+    pinlabels: ["PZ+ rojo", "PZ- negro"]
+
+  PIEZO_COND:
+    type: Acondicionamiento piezo
+    subtype: 1M a 1.65 V - 4k7 serie - 100 nF - BAT54S
+    pinlabels: ["PZ+", "PZ-", "VCC", "GND", "ADC_OUT"]
+
+  BOTONERA:
+    type: 6 pulsadores 6x6 mm
+    subtype: header 1x8
+    pinlabels: ["BTN1", "BTN2", "BTN3", "BTN4", "BTN5", "BTN6", "GND", "GND"]
+
+  LED_OK:
+    type: LED verde 3 mm + R 330 ohm
+    pinlabels: ["A anodo", "K catodo"]
+
+  PSU_12V:
+    type: Fuente externa 12 V / 2 A
+    pinlabels: ["+12V", "GND"]
+
+  F1:
+    type: Fusible 2 A temporizado 5x20
+    pinlabels: ["IN", "OUT"]
+
+  D1:
+    type: SS34 Schottky 3 A / 40 V
+    pinlabels: ["A +12V", "K VMOT"]
+
+  CAP_VMOT:
+    type: C2 100uF/35V + C1 470uF/35V + 100nF/50V
+    subtype: junto a VMOT, menos de 1 cm
+    pinlabels: ["+", "-"]
+
+cables:
+  W_BTN:
+    wirecount: 8
+    colors: [BN, RD, OG, YE, GN, BU, BK, BK]
+    length: 0.25
+  W_I2S:
+    wirecount: 6
+    colors: [RD, BK, BK, OG, YE, GN]
+    length: 0.15
+  W_CTRL:
+    wirecount: 4
+    colors: [OG, YE, VT, BU]
+    length: 0.15
+  W_CFG:
+    wirecount: 5
+    colors: [RD, RD, RD, BK, BK]
+    length: 0.10
+  W_MOT:
+    wirecount: 4
+    colors: [BK, GN, RD, BU]
+    length: 0.30
+  W_PIEZO:
+    wirecount: 2
+    colors: [RD, BK]
+    length: 0.20
+  W_PADC:
+    wirecount: 3
+    colors: [RD, BK, VT]
+    length: 0.20
+  W_PGND:
+    wirecount: 1
+    colors: [BK]
+    length: 0.20
+  W_12V_A:
+    wirecount: 1
+    colors: [RD]
+    length: 0.10
+  W_12V_B:
+    wirecount: 1
+    colors: [RD]
+    length: 0.10
+  W_12V_C:
+    wirecount: 1
+    colors: [RD]
+    length: 0.15
+  W_12V_D:
+    wirecount: 1
+    colors: [BK]
+    length: 0.15
+  W_CAP:
+    wirecount: 2
+    colors: [RD, BK]
+    length: 0.05
+  W_LED:
+    wirecount: 2
+    colors: [RD, BK]
+    length: 0.15
+
+connections:
+  # --- 6 pulsadores: GPIO a botonera, comun a GND (pull-up interno + 100 nF) ---
+  -
+    - ESP32: [5, 6, 7, 8, 9, 10, 3, 4]
+    - W_BTN: [1, 2, 3, 4, 5, 6, 7, 8]
+    - BOTONERA: [1, 2, 3, 4, 5, 6, 7, 8]
+
+  # --- INMP441: 3V3, GND, L/R a GND (canal izquierdo), BCLK, WS, SD ---
+  # SCK = 64 x 16 kHz = 1.024 MHz; SD lleva 100k a GND junto al modulo
+  -
+    - ESP32: [1, 3, 4, 11, 12, 13]
+    - W_I2S: [1, 2, 3, 4, 5, 6]
+    - INMP441: [1, 2, 3, 4, 5, 6]
+
+  # --- Control del driver: STEP, DIR, ENABLE, nFAULT ---
+  -
+    - ESP32: [14, 15, 16, 17]
+    - W_CTRL: [1, 2, 3, 4]
+    - DRV8825: [7, 8, 1, 15]
+
+  # --- Configuracion: 1/16 = M2 alto, M0 y M1 bajos; RESET y SLEEP a 3V3 ---
+  -
+    - ESP32: [1, 1, 1, 3, 3]
+    - W_CFG: [1, 2, 3, 4, 5]
+    - DRV8825: [4, 5, 6, 2, 3]
+
+  # --- Potencia 12 V: fuente, fusible, diodo, VMOT ---
+  - [PSU_12V: 1, W_12V_A: 1, F1: 1]
+  - [F1: 2, W_12V_B: 1, D1: 1]
+  - [D1: 2, W_12V_C: 1, DRV8825: 9]
+  - [PSU_12V: 2, W_12V_D: 1, DRV8825: 10]
+
+  # --- Capacitores en paralelo con VMOT y GND ---
+  -
+    - CAP_VMOT: [1, 2]
+    - W_CAP: [1, 2]
+    - DRV8825: [9, 10]
+
+  # --- Bobinas: par A negro/verde, par B rojo/azul ---
+  -
+    - DRV8825: [13, 14, 12, 11]
+    - W_MOT: [1, 2, 3, 4]
+    - NEMA17: [1, 2, 3, 4]
+
+  # --- Piezo: disco al acondicionamiento (solo proteccion) ---
+  -
+    - PIEZO: [1, 2]
+    - W_PIEZO: [1, 2]
+    - PIEZO_COND: [1, 2]
+
+  # --- Acondicionamiento: 3V3, GND analogica, ADC1_CH0 ---
+  -
+    - PIEZO_COND: [3, 4, 5]
+    - W_PADC: [1, 2, 3]
+    - ESP32: [1, 4, 18]
+
+  # --- PZ- al mismo nodo de GND analogica ---
+  - [PIEZO_COND: 2, W_PGND: 1, ESP32: 4]
+
+  # --- LED de estado ---
+  -
+    - ESP32: [19, 20]
+    - W_LED: [1, 2]
+    - LED_OK: [1, 2]
