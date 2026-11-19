@@ -9,6 +9,8 @@
 #include "dsps_wind_hann.h"
 #include "dsps_view.h"
 
+//LSM9DS1
+
 
 // Etiqueta para identificar tus mensajes en el monitor serie
 static const char *TAG = "MI_SISTEMA";
@@ -16,7 +18,9 @@ static const char *TAG = "MI_SISTEMA";
 #define FFT_SIZE      1024   // Must be a power of 2 (e.g., 512, 1024, 2048)
 #define SAMPLE_RATE   16000  // Sample rate in Hz (common for voice/audio analysis)
 #define TARGET_FREQ   1000   // Mock signal frequency in Hz (we will look for this)
-
+#define I2C_SDA 8 //IO8
+#define I2C_SCL 9 //IO9
+#define LED 40 //IO40
 
 __attribute__((aligned(16))) float input_signal[FFT_SIZE];
 __attribute__((aligned(16))) float fft_buffer[FFT_SIZE * 2]; // Needs 2x size for complex pairs
@@ -38,27 +42,21 @@ void app_main(void)
 
     for (int i = 0; i < FFT_SIZE; i++) {
         float time = (float)i / SAMPLE_RATE;
-        // Generate pure 1000Hz tone
+        // Generación de una señal de prueba de 1000hz
         input_signal[i] = sinf(2 * M_PI * TARGET_FREQ * time); 
     }
 
-    // 5. Pack real samples into the complex buffer as pairs [Real, Imag, Real, Imag...]
-    // Because it's a real-valued signal, we set all Imaginary components to 0
     for (int i = 0; i < FFT_SIZE; i++) {
-        fft_buffer[i * 2 + 0] = input_signal[i]; // Real part
-        fft_buffer[i * 2 + 1] = 0.0f;            // Imaginary part
+        fft_buffer[i * 2 + 0] = input_signal[i]; // parte real
+        fft_buffer[i * 2 + 1] = 0.0f;            // parte imaginaria
     }
 
-    // 6. Execute the Complex FFT 
     dsps_fft2r_fc32(fft_buffer, FFT_SIZE);
 
-    // 7. Reorder bit-reversed outputs back into linear frequency bins
     dsps_bit_rev_fc32(fft_buffer, FFT_SIZE);
 
-    // 8. Split the complex spectrum to extract the real signal components
     dsps_cplx2reC_fc32(fft_buffer, FFT_SIZE);
 
-    // 9. Calculate Magnitudes for the unique frequency bins (up to Nyquist frequency: FFT_SIZE / 2)
     float max_magnitude = 0;
     int peak_bin = 0;
 
@@ -66,18 +64,16 @@ void app_main(void)
         float real = fft_buffer[i * 2 + 0];
         float imag = fft_buffer[i * 2 + 1];
         
-        // Magnitude = sqrt(real^2 + imag^2)
+        // Amplitud = sqrt(real^2 + imag^2)
         magnitude[i] = sqrtf(real * real + imag * imag);
 
-        // Keep track of the dominant frequency peak
         if (magnitude[i] > max_magnitude) {
             max_magnitude = magnitude[i];
             peak_bin = i;
         }
     }
 
-    // 10. Convert the peak bin index to actual Hz frequency
-    // Formula: Frequency = Bin_Index * (Sample_Rate / FFT_SIZE)
+    
     float detected_frequency = (float)peak_bin * ((float)SAMPLE_RATE / (float)FFT_SIZE);
 
     ESP_LOGI(TAG, "===============================================");
