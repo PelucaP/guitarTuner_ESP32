@@ -12,6 +12,8 @@ managed_components/
 
 # Local editor settings
 .vscode/
+.idea/
+cmake-build-*/
 
 # oh-my-embedded MCP logs
 mcp-*.log
