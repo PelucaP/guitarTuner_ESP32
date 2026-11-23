@@ -20,6 +20,10 @@ Después de que termine el proceso se puede revisar el funcionamiento del proyec
 
 ``` idf.py -p /dev/ttyACM0 monitor ```
 
+Puede ser que haga falta, si falla al flashear:
+
+``` idf.py set-target esp32 ```
+
 
 ## Avance del proyecto
 
