@@ -2,8 +2,8 @@
  * NEMA 17 + DRV8825 on an ESP32-WROOM-32.
  *
  *   ESP32            DRV8825 module
- *   GPIO27  -------> STEP
- *   GPIO26  -------> DIR
+ *   GPIO18  -------> STEP
+ *   GPIO19  -------> DIR
  *   GND     -------> GND  (logic + motor supply ground, must be common)
  *
  * Optional: nENBL, M0, M1, M2 - see drv8825_config_t.
@@ -32,7 +32,7 @@ void app_main(void)
         .m0_gpio = GPIO_NUM_NC,   /* microstep pins set by jumpers */
         .m1_gpio = GPIO_NUM_NC,
         .m2_gpio = GPIO_NUM_NC,
-        .microstep = DRV8825_MICROSTEP_1_16,
+        .microstep = DRV8825_MICROSTEP_1_16,   /* must match the M0/M1/M2 jumpers */
         .dir_cw_level = 0,
         .speed_hz = 2000,         /* microsteps/s -> 0.625 rev/s at 1/16 */
         .accel_steps = 400,
@@ -45,10 +45,6 @@ void app_main(void)
     while (true) {
         ESP_LOGI(TAG, "one revolution clockwise");
         ESP_ERROR_CHECK(drv8825_move(&s_motor, rev));
-        vTaskDelay(pdMS_TO_TICKS(1000));
-
-        ESP_LOGI(TAG, "one revolution counter-clockwise");
-        ESP_ERROR_CHECK(drv8825_move(&s_motor, -rev));
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }

@@ -7,8 +7,8 @@ STEP/DIR driver.
 
 | ESP32-WROOM-32 | DRV8825 module | Notes |
 |----------------|----------------|-------|
-| GPIO27 | STEP | driven by the RMT peripheral |
-| GPIO26 | DIR | set before every move |
+| GPIO18 | STEP | driven by the RMT peripheral |
+| GPIO19 | DIR | set before every move |
 | GND | GND | **must be common with the motor supply** |
 | (optional) any free GPIO | nENBL | add it as `.en_gpio`, otherwise tie nENBL to GND |
 | (optional) 3 GPIOs | M0 / M1 / M2 | only needed if you want to change microstepping at runtime |
@@ -54,8 +54,8 @@ idf.py -p /dev/ttyUSB0 flash monitor
 static drv8825_t motor;
 
 const drv8825_config_t cfg = {
-    .step_gpio = GPIO_NUM_27,
-    .dir_gpio  = GPIO_NUM_26,
+    .step_gpio = GPIO_NUM_18,
+    .dir_gpio  = GPIO_NUM_19,
     .en_gpio   = GPIO_NUM_NC,
     .m0_gpio = GPIO_NUM_NC, .m1_gpio = GPIO_NUM_NC, .m2_gpio = GPIO_NUM_NC,
     .microstep = DRV8825_MICROSTEP_1_16,
