@@ -12,11 +12,40 @@
 
 static const char *TAG = "button-test";
 
+typedef struct {
+    const char *name;
+    float       hz;
+} guitar_string_t;
+
+static const guitar_string_t GUITAR_STRINGS[] = {
+    {"E2",  82.41f},
+    {"A2", 110.00f},
+    {"D3", 146.83f},
+    {"G3", 196.00f},
+    {"B3", 246.94f},
+    {"E4", 329.63f},
+};
+#define GUITAR_STRING_COUNT (sizeof(GUITAR_STRINGS) / sizeof(GUITAR_STRINGS[0]))
+
+static size_t s_string_idx;   /* 0 = E2, the low string */
+
+static void select_next_string(void)
+{
+    s_string_idx = (s_string_idx + 1) % GUITAR_STRING_COUNT;
+    ESP_LOGI(TAG, "target %s: %.2f Hz", GUITAR_STRINGS[s_string_idx].name,
+             GUITAR_STRINGS[s_string_idx].hz);
+}
+
 static void on_button_event(void *handle, void *usr_data)
 {
     (void)usr_data;
     button_event_t event = iot_button_get_event((button_handle_t)handle);
-    ESP_LOGI(TAG, "%s", iot_button_get_event_str(event));
+
+    if (event == BUTTON_SINGLE_CLICK) {
+        select_next_string();
+    } else {
+        ESP_LOGI(TAG, "%s", iot_button_get_event_str(event));
+    }
 }
 
 void app_main(void)
@@ -40,7 +69,7 @@ void app_main(void)
     ESP_ERROR_CHECK(iot_button_register_cb(btn, BUTTON_DOUBLE_CLICK, NULL, on_button_event, NULL));
     ESP_ERROR_CHECK(iot_button_register_cb(btn, BUTTON_LONG_PRESS_START, NULL, on_button_event, NULL));
 
-    ESP_LOGI(TAG, "ready on GPIO%d (active %s): short=%dms long=%dms",
+    ESP_LOGI(TAG, "ready on GPIO%d (active %s); start on %s (%.2f Hz), single click cycles",
              (int)BUTTON_GPIO, BUTTON_ACTIVE_LEVEL ? "HIGH" : "LOW",
-             BUTTON_SHORT_MS, BUTTON_LONG_MS);
+             GUITAR_STRINGS[s_string_idx].name, GUITAR_STRINGS[s_string_idx].hz);
 }
